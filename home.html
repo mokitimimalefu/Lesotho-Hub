@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lesotho Hub</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Tahoma, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: lightgray; 
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: green;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 15px 15px 0 0; /* only top corners */
+      margin: 0;
+    }
+
+    header .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      gap: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    main h1 {
+      text-align: center;
+      color: black;
+      margin-bottom: 30px;
+    }
+
+    .categories-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2 columns */
+      gap: 20px;
+      width: 90%;
+      max-width: 900px;
+    }
+
+    .category-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .category-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+       
+    }
+
+    .category-item h3 {
+      margin: 15px 0 15px;
+      color: black;
+    }
+
+    footer {
+      background-color: green;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      border-radius: 0 0 15px 15px;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">LESOTHO HUB</div>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="business.html">Business</a>
+      <a href="About.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="tips.html">Tips</a>
+    </nav>  
+  </header>
+  
+  <main>
+      <h1>Farmers’ Categories</h1>
+      <div class="categories-grid">
+      
+      <div class="category-item">
+        <h3>Crop Farms</h3>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnUkKbUlkA6Ioz9BgNvehEvCE4NoX1me1Lqg&s">
+       </div>
+
+      
+      <div class="category-item">
+        <h3>Livestock Farms</h3>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz0gseR75lm7oyR0QWJM_JgejJyXx1Cv6J_g&s" height="100px" width="200px">
+       </div>
+
+      <div class="category-item">
+        <h3>Fruit Farms</h3>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR940lO83Gh4QEQQg6srHOi4T202gwbvsAiCA&s" height="100px" width="200px">
+        </div>
+
+    
+      <div class="category-item">
+        <h3>Horticulture Farms</h3>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSslTHUtF345nPx2nr-vbIFGNQ0_rRtqJiH8Q&s" height="100px" width="200px">
+        </div>
+    </main>
+
+  <footer>
+    <p>@2025 | Lesotho Hub</p>
+  </footer>
+</body>
+</html>

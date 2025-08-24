@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lesotho Hub</title>
+  <style>
+    body {
+      font-family: Tahoma, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: lightgray; 
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: green;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 15px 15px 0 0;
+      margin: 0;
+    }
+
+    header .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      gap: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      width: 100%;
+
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTcDEgLdCuddDR7hg7Q-cenPa1wj0m7e4WQg&s');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 40px;
+      border-radius: 10px;
+    }
+
+    main h1 {
+      text-align: center;
+      color: black;
+      margin-bottom: 30px;
+    }
+
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      width: 90%;
+      max-width: 1000px;
+      justify-content: center;
+
+    
+    }
+
+    .contact-info, .contact-form {
+      background-color: rgba(255, 255, 255, 0.9); /* slightly transparent white */
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      flex: 1 1 400px;
+      box-sizing: border-box;
+    }
+
+    .contact-info p {
+      margin: 10px 0;
+      font-weight: bold;
+    }
+
+    .contact-form label {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .contact-form input, 
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid white;
+      box-sizing: border-box;
+    }
+
+    .contact-form textarea {
+      resize: vertical;
+      height: 120px;
+    }
+
+    .contact-form button {
+      margin-top: 20px;
+      padding: 12px 20px;
+      background-color: green;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .contact-form button:hover {
+      background-color: darkgreen;
+    }
+
+    footer {
+      background-color: green;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      border-radius: 0 0 15px 15px;
+      margin: 0;
+    }
+
+    @media (max-width: 900px) {
+      .contact-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">LESOTHO HUB</div>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="business.html">Business</a>
+      <a href="About.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="tips.html">Tips</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact Us</h1>
+
+    <div class="contact-container">
+      <!-- Contact Information -->
+      <div class="contact-info">
+        <p>📞 Phone: +266 583 128 14</p>
+        <p>✉️ Email: info@lesothohub.com</p>
+        <p>📍 Address: Maseru, Lesotho</p>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <form action="#" method="post">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your email" required>
+
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Subject of your claim" required>
+
+          <label for="message">Message / Claim</label>
+          <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+          <button type="submit">Submit Claim</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>@ 2025 | Lesotho Hub</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lesotho Hub</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Tahoma, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: lightgray; 
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color:green;
+      color: white;
+      padding: 20px ;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 15px 15px 0 0; /* only top corners */
+      margin: 0;
+    }
+
+    header .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      gap: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;}
+
+    main {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    main h1 {
+      text-align: center;
+      color: black; /* Title black */
+      margin-bottom: 30px;
+    }
+
+    .categories-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2 columns */
+      gap: 20px;
+      width: 90%;
+      max-width: 900px;
+    }
+
+    .category-item {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.2s;
+      padding-bottom: 15px;
+    }
+
+    .category-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .category-item img {
+      width: 200px;
+      height: 100px;
+      object-fit: cover;
+      margin-top: 10px;
+    }
+
+    .category-item h3 {
+      margin: 10px 0 5px;
+      color: black;
+    }
+
+    .category-item p {
+      color: dimgray;
+      margin: 0 0 10px;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: green;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      border-radius: 0 0 15px 15px; /* only bottom corners */
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">LESOTHO HUB</div>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="business.html">Business</a>
+      <a href="About.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="tips.html">Tips</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>BusinessName</h1>
+    <div class="categories-grid">
+      
+      
+      <div class="category-item">
+        <h2>CROPS FARMS</h2>
+        <img src="wheat flour.jpeg" height="100px" width="200px">
+        <img src="phoofo.jpeg" height="100px" width="200px">
+        <h3>Maize Meal 12.5kg</h3>
+        <p>Price: M120</p>
+        <h3>wheat flour 10kg</h3>
+        <p>Price: M95</p>
+      </div>
+
+      
+      <div class="category-item">
+         <h2>LIVESTOCK FARMS</h2>
+        <img src="dairy cow.jpeg" height="100px" width="200px">
+        <img src="free range chicken.jpeg" height="100px" width="200px">
+        <h3>Dairy Cow</h3>
+        <p>Price: M12000</p>
+        <h3>Free Range Chicken</h3>
+        <p>Price: M120</p>
+      </div>
+
+
+      <div class="category-item">
+         <h2>FRUIT FARMS</h2>
+        <img src="apples.jpeg" height="100px" width="200px">
+        <img src="bananas.jpeg" height="100px" width="200px">
+        <h3>Fresh Apples 1kg</h3>
+        <p>Price: M35</p>
+        <h3>Bananas 1kg</h3>
+        <p>Price: M30</p>
+      </div>
+
+      
+      <div class="category-item">
+         <h2>HORTICULTURE FARMS</h2>
+        <img src="carrots.jpeg" height="100px" width="200px">
+        <img src="tomatoes.jpeg" height="100px" width="200px">
+        <h3>Carrots 1kg</h3>
+        <p>Price: M50</p>
+        <h3>Tomatoes 1kg</h3>
+        <p>Price: M200</p>
+      </div>
+
+  </main>
+
+  <footer>
+    <p>@ 2025 | Lesotho Hub</p>
+  </footer>
+</body>
+</html>
